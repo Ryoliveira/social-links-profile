@@ -21,9 +21,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- [Solution](https://ryoliveira.github.io/social-links-profile/)
+- [Solution](https://www.frontendmentor.io/solutions/social-link-card-component-made-in-vue-with-composition-api-ITDZ95iYAo)
 
-- [Live Site](https://ryoliveira.github.io/QR-component/)
+- [Live Site](https://ryoliveira.github.io/social-links-profile/)
 
 
 ### Built with
