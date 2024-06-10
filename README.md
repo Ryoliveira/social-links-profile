@@ -16,7 +16,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Screenshot
 
 ![solution](./screenshot-submission.jpg)
-![solution(Active Link)](.screenshot-active-link.jpg)
+
+![solution(Active Link)](./screenshot-active-link.jpg)
 
 ### Links
 
