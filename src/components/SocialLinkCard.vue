@@ -29,8 +29,6 @@ defineProps({ cardInfo: Object });
 const redirect = (url: string) => {
     window.location.href = url;
 }
-
-console.log
 </script>
 
 <style src="../scss/SocialLinkCard.scss" scoped />
