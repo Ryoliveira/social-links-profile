@@ -26,7 +26,7 @@
 <script setup lang="ts">
 defineProps({ cardInfo: Object });
 
-const redirect = (url) => {
+const redirect = (url: string) => {
     window.location.href = url;
 }
 
