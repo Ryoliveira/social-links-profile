@@ -1,0 +1,62 @@
+
+.container {
+    width: 300px;
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    padding: 40px 35px 20px;
+}
+
+.avatar {
+    max-height: 100px;
+    border-radius: 100px;
+}
+
+.name {
+    margin: 15px 0 0;
+    font-size: 30px;
+}
+
+.residence {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(177, 205, 50);
+}
+
+.bio {
+    font-size: 14px;
+    color: lightgrey;
+}
+
+.link {
+    display:flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 0 15px;
+    border-radius: 5px;
+    background-color: rgb(48, 47, 47);
+    color: lightgrey;
+
+    cursor: pointer;
+    
+    /* use & to add concatenate selector */
+    &:hover {
+        background-color: rgb(177, 205, 50);
+        transition-duration: 1000ms;
+        color: black;
+    }
+
+    .link-text {
+        font-size: 15px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+
+}
+
+    
+
+
+
