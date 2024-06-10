@@ -15,12 +15,13 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![solution](./screenshotsubmition.jpg)
+![solution](./screenshot-submission.jpg)
 ![solution(Active Link)](.screenshot-active-link.jpg)
 
 ### Links
 
 - [Solution](https://ryoliveira.github.io/social-links-profile/)
+
 - [Live Site](https://ryoliveira.github.io/QR-component/)
 
 
