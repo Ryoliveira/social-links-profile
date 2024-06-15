@@ -23,7 +23,7 @@
             <ul>
                 <li v-for="link in cardInfo.links">
                     <a class="link" :href="link.url" target="_blank">{{ link.title }}
-                        <span class="sr-only">This link leaves the page to a new tab or window</span>
+                        <span class="sr-only">(opens in a new tab)</span>
                     </a>
                 </li>
             </ul>
