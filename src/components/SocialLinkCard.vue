@@ -1,14 +1,17 @@
 <template>
 
     <main>
+        <!-- header -->
+        <h1 class="sr-only">Social Links Profile Card Component</h1>
+
         <!-- container -->
         <section class="container">
 
             <!-- avatar -->
-            <img class="avatar" :src="cardInfo.avatar" alt="Avatar Photo">
+            <img class="avatar" :src="cardInfo.avatar" alt="User avatar photo">
 
             <!-- name -->
-            <p class="name">{{ cardInfo.name }}</p>
+            <h1 class="name">{{ cardInfo.name }}</h1>
 
             <!-- location -->
             <p class="residence">{{ cardInfo.residence }}</p>
@@ -17,11 +20,19 @@
             <p class="bio">{{ cardInfo.bio }}</p>
 
             <!-- links -->
-            <a class="link" :href="link.url" target="_blank" v-for="link in cardInfo.links">{{ link.title }}</a>
+            <ul>
+                <li v-for="link in cardInfo.links">
+                    <a class="link" :href="link.url" target="_blank">{{ link.title }}
+                        <span class="sr-only">This link leaves the page to a new tab or window</span>
+                    </a>
+                </li>
+            </ul>
+
 
         </section>
 
     </main>
+
     <footer>
         <span>
             Frontend Mentor Challenge <a :href="solutionUrl" target="_blank">Social Links Profile</a>.

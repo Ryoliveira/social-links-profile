@@ -2,8 +2,7 @@
 @use "./variables" as *;
 
 .container {
-  max-width: fit-content;
-  min-width: convertPxToRem(325px);
+  max-width: convertPxToRem(325px);
   background-color: $card-color;
   border-radius: 15px;
   padding: convertPxToRem(25px);
@@ -31,7 +30,7 @@
 }
 
 .bio {
-  font-size: 14px;
+  font-size: convertPxToRem(14px);
   color: $text-color-gray;
   margin: convertPxToRem(20px) 0;
 }
