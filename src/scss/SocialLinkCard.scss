@@ -66,6 +66,7 @@ footer {
 
   a {
     color: $credit-link-color;
+    display: inline-block;
 
     &:hover{
       color: darken($credit-link-color, 10%);
