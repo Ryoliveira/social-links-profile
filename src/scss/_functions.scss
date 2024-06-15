@@ -1,0 +1,10 @@
+@use "sass:math";
+
+/// @access public
+/// @param {string} $px
+/// @returns {string} - Returns REM string.
+/// @example font-size: convertPxToRem(16px);
+@function convertPxToRem($px) {
+  $convertedSize: math.div($px, 16px);
+  @return #{$convertedSize}rem;
+}

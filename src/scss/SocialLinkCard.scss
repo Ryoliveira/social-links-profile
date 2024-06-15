@@ -1,60 +1,57 @@
+@use "./functions" as *;
+@use "./variables" as *;
 
 .container {
-    width: 300px;
-    background-color: #1d1d1d;
-    border-radius: 15px;
-    padding: 40px 35px 20px;
+  min-width: convertPxToRem(325px);
+  background-color: $card-color;
+  border-radius: 15px;
+  padding: convertPxToRem(25px);
+  text-align: center;
 }
 
 .avatar {
-    max-height: 100px;
-    border-radius: 100px;
+  max-height: convertPxToRem(80px);
+  border-radius: 100px;
+  margin: convertPxToRem(14px) auto convertPxToRem(18px);
 }
 
 .name {
-    margin: 15px 0 0;
-    font-size: 30px;
+  font-size: convertPxToRem(25px);
+  font-weight: 400;
+  color: $name-color;
+  margin-bottom: convertPxToRem(5px);
 }
 
 .residence {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: bold;
-    color: #b1cd32;
+  font-size: convertPxToRem(14px);
+  font-weight: 500;
+  color: $residence-color;
 }
 
 .bio {
-    font-size: 14px;
-    color: lightgrey;
+  font-size: 14px;
+  color: $text-color-gray;
+  margin: convertPxToRem(20px) 0;
 }
 
 .link {
-    display:flex;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-    margin: 0 0 15px;
-    border-radius: 5px;
-    background-color: rgb(48, 47, 47);
-    color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: convertPxToRem(14px);
+  font-weight: 600;
+  padding: convertPxToRem(10px);
+  margin: convertPxToRem(14px) 0;
+  border-radius: 5px;
+  background-color: $link-bg-color;
+  color: $text-color-off-white;
 
-    cursor: pointer;
-    
-    /* use & to add concatenate selector */
-    &:hover {
-        background-color: rgb(177, 205, 50);
-        transition-duration: 1000ms;
-        color: #000000;
-    }
+  cursor: pointer;
 
-    .link-text {
-        font-size: 15px;
-        font-weight: bold;
-        align-self: center;
-    }
+  /* use & to add concatenate selector */
+  &:hover {
+    background-color: $hover-bg-color;
+    transition-duration: 500ms;
+    color: $text-color-black;
+  }
 }
-
-    
-
-
-

@@ -1,34 +1,40 @@
 <template>
 
-    <!-- container -->
-    <div class="container">
+    <main>
+        <!-- container -->
+        <section class="container">
 
-        <!-- avatar -->
-        <img class="avatar" :src="cardInfo?.avatar" alt="Avatar Photo"/>
+            <!-- avatar -->
+            <img class="avatar" :src="cardInfo.avatar" alt="Avatar Photo">
 
-        <!-- name -->
-        <p class="name">{{ cardInfo?.name }}</p>
-        <!-- location -->
-        <p class="residence">{{ cardInfo?.residence }}</p>
+            <!-- name -->
+            <p class="name">{{ cardInfo.name }}</p>
 
-        <!-- bio -->
-        <p class="bio">{{ cardInfo?.bio }}</p>
+            <!-- location -->
+            <p class="residence">{{ cardInfo.residence }}</p>
 
-        <!-- links -->
-        <div @click="redirect(link.url)" class="link" v-for="link in cardInfo?.links">
-            <span class="link-text">{{ link.title }}</span>
-        </div>
+            <!-- bio -->
+            <p class="bio">{{ cardInfo.bio }}</p>
 
-    </div>
+            <!-- links -->
+            <a class="link" :href="link.url" target="_blank" v-for="link in cardInfo.links">{{ link.title }}</a>
+
+        </section>
+
+    </main>
 
 </template>
 
 <script setup lang="ts">
-defineProps({ cardInfo: Object });
+import { PropType } from 'vue';
+import SocialCardInfo from '../interfaces/types';
 
-const redirect = (url: string) => {
-    window.location.href = url;
-}
+defineProps({
+    cardInfo: {
+        type: Object as PropType<SocialCardInfo>,
+        required: true,
+    }
+});
 </script>
 
 <style src="../scss/SocialLinkCard.scss" scoped />
